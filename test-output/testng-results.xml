@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-08T07:20:45 CEST" name="RegressionTest" finished-at="2023-06-08T07:20:47 CEST" duration-ms="2126">
+  <suite started-at="2023-06-08T08:57:15 CEST" name="RegressionTest" finished-at="2023-06-08T08:57:18 CEST" duration-ms="2907">
     <groups>
     </groups>
-    <test started-at="2023-06-08T07:20:45 CEST" name="TestOne" finished-at="2023-06-08T07:20:47 CEST" duration-ms="2126">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:tests.LoginTest@c8c12ac]" started-at="2023-06-08T07:20:45 CEST" name="browserlaunch" finished-at="2023-06-08T07:20:47 CEST" duration-ms="1759" status="PASS">
+    <test started-at="2023-06-08T08:57:15 CEST" name="TestOne" finished-at="2023-06-08T08:57:18 CEST" duration-ms="2907">
+      <class name="tests.HomePageTest">
+        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:tests.HomePageTest@293a5bf6]" started-at="2023-06-08T08:57:15 CEST" name="browserlaunch" finished-at="2023-06-08T08:57:17 CEST" duration-ms="2605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunch -->
-        <test-method signature="Login()[pri:1, instance:tests.LoginTest@c8c12ac]" started-at="2023-06-08T07:20:47 CEST" name="Login" finished-at="2023-06-08T07:20:47 CEST" duration-ms="166" status="PASS">
+        <test-method signature="Login()[pri:1, instance:tests.HomePageTest@293a5bf6]" started-at="2023-06-08T08:57:18 CEST" name="Login" finished-at="2023-06-08T08:57:18 CEST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="HomePageVerify()[pri:2, instance:tests.LoginTest@c8c12ac]" started-at="2023-06-08T07:20:47 CEST" name="HomePageVerify" finished-at="2023-06-08T07:20:47 CEST" duration-ms="24" status="PASS">
+        <test-method signature="VerifyHomePage()[pri:2, instance:tests.HomePageTest@293a5bf6]" started-at="2023-06-08T08:57:18 CEST" name="VerifyHomePage" finished-at="2023-06-08T08:57:18 CEST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomePageVerify -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.LoginTest@c8c12ac]" started-at="2023-06-08T07:20:47 CEST" name="closeBrowser" finished-at="2023-06-08T07:20:47 CEST" duration-ms="151" status="PASS">
+        </test-method> <!-- VerifyHomePage -->
+        <test-method signature="VerifyAddItemtoCart()[pri:3, instance:tests.HomePageTest@293a5bf6]" started-at="2023-06-08T08:57:18 CEST" name="VerifyAddItemtoCart" finished-at="2023-06-08T08:57:18 CEST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddItemtoCart -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.HomePageTest@293a5bf6]" started-at="2023-06-08T08:57:18 CEST" name="closeBrowser" finished-at="2023-06-08T08:57:18 CEST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- tests.LoginTest -->
+      </class> <!-- tests.HomePageTest -->
     </test> <!-- TestOne -->
   </suite> <!-- RegressionTest -->
 </testng-results>

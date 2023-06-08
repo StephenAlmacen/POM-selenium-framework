@@ -3,7 +3,7 @@
 <suite name="RegressionTest">
 	<test thread-count="5" name="TestOne">
 		<classes>
-			<class name="tests.LoginTest"/>
+			<class name="tests.HomePageTest"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
-	WebDriver driver;
+	private WebDriver driver;
 
 	private By usernameTextField = By.xpath("//input[@id='user-name']");
 	private By passwordTextField = By.xpath("//input[@id='password']");

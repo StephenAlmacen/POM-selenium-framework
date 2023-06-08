@@ -21,5 +21,19 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Apache POI - Accessing xls format -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+		
+		<!-- Apache POI - Accessing xlsx format -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>4.1.2</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 </project>
