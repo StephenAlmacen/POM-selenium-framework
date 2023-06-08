@@ -3,6 +3,9 @@ package tests;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.openqa.selenium.WebDriver;
@@ -21,34 +24,33 @@ public class LoginTest {
 	XSSFSheet sheet;
 	DataRepository dr;
 	ConfigFile configFile = new ConfigFile();
-
+	private static final Logger logger = LogManager.getLogger(LoginTest.class);
+	
 	LoginPage lp;
 	HomePage hp;
 
 	@BeforeTest
 	public void browserlaunch() throws Exception {
+		BasicConfigurator.configure();
 		dr = new DataRepository(configFile.getDataRepositoryPath(), "LoginTestDataSheet");
 		driver = Browser.StartBrowser(configFile.getBrowserType(), configFile.getURL());
 		driver.manage().timeouts().implicitlyWait(configFile.getWaitDuration(), TimeUnit.SECONDS);
-		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
+		lp = new LoginPage(driver, logger);
+		hp = new HomePage(driver, logger);
+		logger.info("---Starting LoginTest---");
 	}
 
 	// Login to Site
 	@Test(priority = 1)
 	public void Login() {
 		lp.loginToSite(dr.getStringCellValue("Username"), dr.getStringCellValue("Password"));
-
-	}
-
-	// Verifing the Home Page.
-	@Test(priority = 2)
-	public void VerifyHomePage() {
 		hp.verifyHomepage();
+
 	}
 
 	@AfterTest
 	public void closeBrowser() {
+		logger.info("---Ending LoginTest---");
 		driver.quit();
 	}
 }

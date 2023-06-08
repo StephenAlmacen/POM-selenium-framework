@@ -6,7 +6,6 @@
       <class name="tests.LoginTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="VerifyHomePage"/>
           <include name="Login"/>
           <include name="browserlaunch"/>
         </methods>

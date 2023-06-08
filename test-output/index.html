@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,27 +103,7 @@
                     <div class="method-list-content passed suite-RegressionTest">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionTest" title="tests.HomeTest" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionTest" title="tests.LoginTest" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-RegressionTest" title="tests.HomeTest" class="method navigator-link" hash-for-method="VerifyAddItemtoCart">VerifyAddItemtoCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionTest" title="tests.HomeTest" class="method navigator-link" hash-for-method="VerifyHomePage">VerifyHomePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionTest" title="tests.LoginTest" class="method navigator-link" hash-for-method="VerifyHomePage">VerifyHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-RegressionTest -->
@@ -146,45 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
-                  <span class="method-name">Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="VerifyAddItemtoCart">
                   </a> <!-- VerifyAddItemtoCart -->
                   <span class="method-name">VerifyAddItemtoCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyHomePage">
-                  </a> <!-- VerifyHomePage -->
-                  <span class="method-name">VerifyHomePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-RegressionTest-class-passed -->
-          <div class="suite-RegressionTest-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
-                  <span class="method-name">Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyHomePage">
-                  </a> <!-- VerifyHomePage -->
-                  <span class="method-name">VerifyHomePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,7 +145,6 @@
 &lt;suite name=&quot;RegressionTest&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestOne&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
       &lt;class name=&quot;tests.HomeTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestOne --&gt;
@@ -216,7 +159,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestOne (2 classes)</span>
+                <span class="test-name">TestOne (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,32 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login')
+data.setCell(0, 1, 'VerifyAddItemtoCart')
 data.setCell(0, 2, 'tests.HomeTest')
-data.setCell(0, 3, 210);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Login')
-data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 182);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyAddItemtoCart')
-data.setCell(2, 2, 'tests.HomeTest')
-data.setCell(2, 3, 90);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifyHomePage')
-data.setCell(3, 2, 'tests.LoginTest')
-data.setCell(3, 3, 25);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'VerifyHomePage')
-data.setCell(4, 2, 'tests.HomeTest')
-data.setCell(4, 3, 20);
+data.setCell(0, 3, 301);
 window.suiteTableData['RegressionTest']= { tableData: data, tableDiv: 'times-div-RegressionTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 527 ms</span>
+              <span class="suite-total-time">Total running time: 301 ms</span>
               <div id="times-div-RegressionTest">
               </div> <!-- times-div-RegressionTest -->
             </div> <!-- times-div -->
@@ -298,46 +225,13 @@ return data;
                 <span class="method-name">browserlaunch</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">browserlaunch</span>
-                <span class="method-start">2638 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">Login</span>
-                <span class="method-start">4043 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">VerifyHomePage</span>
-                <span class="method-start">4228 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.HomeTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Login</span>
-                <span class="method-start">4255 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">VerifyHomePage</span>
-                <span class="method-start">4466 ms</span>
-              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyAddItemtoCart</span>
-                <span class="method-start">4487 ms</span>
+                <span class="method-start">2436 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">4578 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">4776 ms</span>
+                <span class="method-start">2740 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
