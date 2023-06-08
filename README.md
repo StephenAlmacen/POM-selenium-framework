@@ -7,4 +7,6 @@ testng
 Selenium Java POM
 Data-driven integration
 Config properties integration
+Log4j logging
+testng reporting
 
