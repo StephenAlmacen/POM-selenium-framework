@@ -8,16 +8,20 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import library.ConfigFile;
+
 public class HomePage {
 	private WebDriver driver;
 	private WebDriverWait wait;
+	private ConfigFile configFile = new ConfigFile();
+	
 	private By productHeader = By.xpath("//span[contains(text(),'Products')]");
 	private By shoppingCartButton = By.xpath("//a[@class='shopping_cart_link']");
 	private String item = "//div[@class='inventory_list']/div/div[2]/div/a/div[contains(text(),'ITEM_NAME')]/parent::a/parent::div/following-sibling::div/button";
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(configFile.getWaitDuration()));
 	}
 	
 	public void verifyHomepage() {

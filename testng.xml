@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="RegressionTest">
-	<test thread-count="5" name="TestOne">
+<test thread-count="5" name="TestOne">
 		<classes>
-			<class name="tests.HomePageTest"/>
+			<class name="tests.LoginTest"/>
+			<class name="tests.HomeTest"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

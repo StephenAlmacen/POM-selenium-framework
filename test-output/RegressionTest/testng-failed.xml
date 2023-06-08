@@ -3,13 +3,14 @@
 <suite name="Failed suite [RegressionTest]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TestOne(failed)">
     <classes>
-      <class name="tests.HomePageTest">
+      <class name="tests.LoginTest">
         <methods>
-          <include name="VerifyAddItemtoCart"/>
           <include name="closeBrowser"/>
+          <include name="VerifyHomePage"/>
+          <include name="Login"/>
           <include name="browserlaunch"/>
         </methods>
-      </class> <!-- tests.HomePageTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- TestOne(failed) -->
 </suite> <!-- Failed suite [RegressionTest] -->

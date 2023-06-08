@@ -23,7 +23,7 @@ public class DataRepository {
 			workbook = new XSSFWorkbook(inputStream);
 			sheet = workbook.getSheet(sheetName);
 		} catch (Exception e) {
-			throw (e);
+			System.out.println(e);
 		}
 	}
 

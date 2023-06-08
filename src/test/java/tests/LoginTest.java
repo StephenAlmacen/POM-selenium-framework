@@ -11,24 +11,25 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import library.Browser;
+import library.ConfigFile;
 import library.DataRepository;
 import pages.HomePage;
 import pages.LoginPage;
 
 public class LoginTest {
 	WebDriver driver;
-	LoginPage lp;
-	HomePage hp;
 	XSSFSheet sheet;
 	DataRepository dr;
+	ConfigFile configFile = new ConfigFile();
+
+	LoginPage lp;
+	HomePage hp;
 
 	@BeforeTest
 	public void browserlaunch() throws Exception {
-		dr = new DataRepository(
-				"C:\\Users\\sdalmacen\\selenium\\git\\repository\\POM-selenium-framework\\src\\test\\resources\\dataRepository\\PomSeleniumFramework.xlsx",
-				"LoginTestDataSheet");
-		driver = Browser.StartBrowser("Chrome", "https://www.saucedemo.com/");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		dr = new DataRepository(configFile.getDataRepositoryPath(), "LoginTestDataSheet");
+		driver = Browser.StartBrowser(configFile.getBrowserType(), configFile.getURL());
+		driver.manage().timeouts().implicitlyWait(configFile.getWaitDuration(), TimeUnit.SECONDS);
 		lp = new LoginPage(driver);
 		hp = new HomePage(driver);
 	}
