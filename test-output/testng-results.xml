@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-08T12:54:22 CEST" name="RegressionTest" finished-at="2023-06-08T12:54:25 CEST" duration-ms="2912">
+  <suite started-at="2023-06-08T13:02:05 CEST" name="RegressionTest" finished-at="2023-06-08T13:02:08 CEST" duration-ms="3063">
     <groups>
     </groups>
-    <test started-at="2023-06-08T12:54:22 CEST" name="TestOne" finished-at="2023-06-08T12:54:25 CEST" duration-ms="2912">
+    <test started-at="2023-06-08T13:02:05 CEST" name="TestOne" finished-at="2023-06-08T13:02:08 CEST" duration-ms="3063">
       <class name="tests.HomeTest">
-        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:tests.HomeTest@6771beb3]" started-at="2023-06-08T12:54:22 CEST" name="browserlaunch" finished-at="2023-06-08T12:54:25 CEST" duration-ms="2424" status="PASS">
+        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:tests.HomeTest@6771beb3]" started-at="2023-06-08T13:02:05 CEST" name="browserlaunch" finished-at="2023-06-08T13:02:07 CEST" duration-ms="2628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunch -->
-        <test-method signature="VerifyAddItemtoCart()[pri:1, instance:tests.HomeTest@6771beb3]" started-at="2023-06-08T12:54:25 CEST" name="VerifyAddItemtoCart" finished-at="2023-06-08T12:54:25 CEST" duration-ms="301" status="PASS">
+        <test-method signature="VerifyAddItemtoCart()[pri:1, instance:tests.HomeTest@6771beb3]" started-at="2023-06-08T13:02:07 CEST" name="VerifyAddItemtoCart" finished-at="2023-06-08T13:02:08 CEST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddItemtoCart -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.HomeTest@6771beb3]" started-at="2023-06-08T12:54:25 CEST" name="closeBrowser" finished-at="2023-06-08T12:54:25 CEST" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.HomeTest@6771beb3]" started-at="2023-06-08T13:02:08 CEST" name="closeBrowser" finished-at="2023-06-08T13:02:08 CEST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
