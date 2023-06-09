@@ -4,7 +4,12 @@
 	<artifactId>POM-selenium-framework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>POM-selenium-framework</name>
-
+	
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+	
 	<build>
 		<plugins>
 			<plugin>
