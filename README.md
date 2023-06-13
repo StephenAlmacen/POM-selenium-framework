@@ -10,7 +10,7 @@ This project contains the following: <br />
 6) Log4j logging <br />
 7) testng reporting <br />
 
-# Test Automation with Java
+# Libraries and Frameworks
 1) Selenium - Web automation
 2) Maven - Build and package management
 3) TestNG - Test execution and Reporting
