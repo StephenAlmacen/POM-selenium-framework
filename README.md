@@ -1,5 +1,5 @@
-# POM-selenium-framework
-Simple PageObjectModel framework using selenium java
+# Test Automation with Java
+Web test automation example project using IntelliJ IDEA Community, Java, Maven, TestNG, Selenium and Page Object Model (POM)
 
 This project contains the following: <br />
 1) maven <br />
@@ -9,4 +9,15 @@ This project contains the following: <br />
 5) Config properties integration <br />
 6) Log4j logging <br />
 7) testng reporting <br />
+
+# Test Automation with Java
+1) Selenium - Web automation
+2) Maven - Build and package management
+3) TestNG - Test execution and Reporting
+4) Log4J - test logging
+
+# Tools
+1) Intellij
+2) Eclipse
+
 
